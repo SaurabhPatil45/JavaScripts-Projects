@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    /* background-color:yellowgreen; */
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    /* position relative is to center the element */
+}
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+  
+}
+
+#lnavr i{
+    color: royalblue;
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    /* This code is used to center element in screen. If you wnat to csnter in any element then wirte postion relative in that elemet */
+}
+
+#textcenter h1{
+ font-size: 90px;
+ font-weight: 900;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: yellow;
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661693444273-17e5e9addb11?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fG9yYW5nZSUyMGZydWl0fGVufDB8fDB8fHww);
+   background-position: center;
+   background-size: cover;
+}
+#righttopleft{
+    width: 55%;
+    height: 100%;
+    background-image:url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
+    background-position: center;
+}
+#righttopright{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675237625695-710b9a6c3f2e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: bottom;
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #right{
+        width: 100%;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+}
